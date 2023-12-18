@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <style>
+        body {
+            padding-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            resize: vertical;
+        }
+
+        .btn-submit {
+            width: 100%;
+            max-width: 200px;
+        }
+    </style>
+</head>
+
+<body class="mb-5">
+    <div class="container mt-5">
+        <label for="forName" class="form-label">Name </label>
+        <span class="text-danger">*</span>
+        <div class="row g-1">
+            <div class="col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="First" />
+            </div>
+            <div class="col-12 col-md-6 mt-2 mt-md-0">
+                <input type="text" class="form-control" placeholder="Last" />
+            </div>
+        </div>
+
+        <label for="forName" class="form-label mt-3">Email
+            <span class="text-danger">*</span>
+        </label>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" style="width: 100%;" />
+            </div>
+        </div>
+
+        <label for="forName" class="form-label mt-3">Your Experience </label>
+        <span class="text-danger">*</span>
+        <div class="row">
+            <div class="col" style="color: rgb(238, 172, 130)">
+                <i class="bi bi-star-fill"> </i>
+                <i class="bi bi-star-fill"> </i><i class="bi bi-star-fill"> </i
+                ><i class="bi bi-star-fill"> </i><i class="bi bi-star-fill"> </i>
+            </div>
+            <div class="col-12 mt-2">
+                Overall, how would you rate your experience with us.
+            </div>
+        </div>
+
+        <label for="forName" class="form-label mt-3 fw-bold fs-5">How satisfied are you with <span
+                class="text-danger">*</span></label>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <td scope="col"></td>
+                    <td scope="col">Very Unsatisfied</td>
+                    <td scope="col">Unsatisfied</td>
+                    <td scope="col">Neutral</td>
+                    <td scope="col">Satisfied</td>
+                    <td scope="col">Very Satisfied</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-light">
+                    <td scope="row">Purchase</td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault4"
+                            /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault4"
+                            /></td>
+                    <td>
+                        <input class="form-check-input border border-dark" type="radio" name="flexRadioDefault4"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault4"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault4"
+                        /></td>
+                </tr>
+                <tr class="table-light">
+                    <td scope="row">Service</td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault5"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault5"
+                        /></td>
+                    <td>
+                        <input class="form-check-input border border-dark" type="radio" name="flexRadioDefault5"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault5"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault5"
+                        /></td>
+                </tr>
+                <tr class="table-light">
+                    <td scope="row">Company Overall</td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault6"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault6"
+                        /></td>
+                    <td>
+                        <input class="form-check-input border border-dark" type="radio" name="flexRadioDefault6"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault6"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault6"
+                        /></td>
+                </tr>
+            </tbody>
+        </table>
+        <label for="forName" class="form-label mt-3 fw-bold fs-5"> How likely are you to <span
+                class="text-danger">*</span> </label>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td scope="col"></td>
+                    <td scope="col">Very Unlikely</td>
+                    <td scope="col">Unlikely</td>
+                    <td scope="col">Neutral</td>
+                    <td scope="col">Likely</td>
+                    <td scope="col">Very Likely</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-light">
+                    <td scope="row">Buy from us again</td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault1"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault1"
+                        /></td>
+                    <td>
+                        <input class="form-check-input border border-dark" type="radio" name="flexRadioDefault1"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault1"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault1"
+                        /></td>
+                </tr>
+                <tr class="table-light">
+                    <td scope="row">Recommend our product to others</td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault2"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault2"
+                        /></td>
+                    <td>
+                        <input class="form-check-input border border-dark" type="radio" name="flexRadioDefault2"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault2"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault2"
+                        /></td>
+                </tr>
+                <tr class="table-light">
+                    <td scope="row">Recommend our company to others</td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault3"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault3"
+                        /></td>
+                    <td>
+                        <input class="form-check-input border border-dark" type="radio" name="flexRadioDefault3"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault3"
+                        /></td>
+                    <td><input class="form-check-input border border-dark" type="radio" name="flexRadioDefault3"
+                        /></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-group">
+            <label class="fs-5 fw-bold" for="exampleFormControlTextarea1">Additional comments or suggestions</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                style="border: 1px solid rgb(228, 229, 229);"></textarea>
+        </div>
+
+        <button class="btn btn-secondary btn-submit mt-3">Submit</button>
+    </div>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
